@@ -1,6 +1,11 @@
 # Modular Rem Scale
 Easily configure and generate modular scales in `rem`s.
 
+## Installation
+```
+yarn add @danscan/modular-scale
+```
+
 ## Configuration
 The `ModularRemScale` constructor takes a `config` object with the following properties:
 
