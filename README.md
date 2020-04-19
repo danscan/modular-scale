@@ -16,6 +16,26 @@ The `ModularRemScale` constructor takes a `config` object with the following pro
 |`getMap`|`(steps: number) => ModularRemScaleMap`|Generate an object of `steps` entries, mapping step numbers (starting at 1) to `rem` values on the scale.|
 |`getStepPx`|`(step: number) => string`|Get the `px` value of a step on the scale.|
 
+## Named Ratios
+|       Key        |    Value    |   Decimal Value   |
+|------------------|-------------|-------------------|
+|`minor-second`    |`16 / 15`    |1.0667             |
+|`major-second`    |`9 / 8`      |1.125              |
+|`minor-third`     |`6 / 5`      |1.2                |
+|`augmented-fourth`|`√2`         |1.4142             |
+|`perfect-fifth`   |`3 / 2`      |1.5                |
+|`minor-sixth`     |`8 / 5`      |1.6                |
+|`golden`          |`1.618033...`|1.61803398875      |
+|`phi`             |`1.618033...`|1.61803398875      |
+|`major-sixth`     |`5 / 3`      |1.6667             |
+|`minor-seventh`   |`16 / 9`     |1.7778             |
+|`major-seventh`   |`15 / 8`     |1.875              |
+|`octave`          |`2`          |2                  |
+|`major-tenth`     |`5 / 2`      |2.5                |
+|`major-eleventh`  |`8 / 3`      |2.6667             |
+|`major-twelfth`   |`3`          |3                  |
+|`double-octave`   |`4`          |4                  |
+
 ## Example
 ```javascript
 import ModularRemScale from '@danscan/modular-scale';
@@ -54,24 +74,3 @@ scale.getStepPx(3);
 scale.getStepPx(4);
 // 27px
 ```
-
-## Named Ratios
-
-|       Key        |    Value    |   Decimal Value   |
-|------------------|-------------|-------------------|
-|`minor-second`    |`16 / 15`    |1.0667             |
-|`major-second`    |`9 / 8`      |1.125              |
-|`minor-third`     |`6 / 5`      |1.2                |
-|`augmented-fourth`|`√2`         |1.4142             |
-|`perfect-fifth`   |`3 / 2`      |1.5                |
-|`minor-sixth`     |`8 / 5`      |1.6                |
-|`golden`          |`1.618033...`|1.61803398875      |
-|`phi`             |`1.618033...`|1.61803398875      |
-|`major-sixth`     |`5 / 3`      |1.6667             |
-|`minor-seventh`   |`16 / 9`     |1.7778             |
-|`major-seventh`   |`15 / 8`     |1.875              |
-|`octave`          |`2`          |2                  |
-|`major-tenth`     |`5 / 2`      |2.5                |
-|`major-eleventh`  |`8 / 3`      |2.6667             |
-|`major-twelfth`   |`3`          |3                  |
-|`double-octave`   |`4`          |4                  |
