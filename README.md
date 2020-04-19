@@ -1,7 +1,7 @@
 # Modular Rem Scale
 Easily configure and generate modular scales in `rem`s.
 
-## Usage
+## Configuration
 The `ModularRemScale` constructor takes a `config` object with the following properties:
 
 | property | type | description |
@@ -10,6 +10,13 @@ The `ModularRemScale` constructor takes a `config` object with the following pro
 |`ratio`|`number | RatioName`|The ratio to use for the scale.|
 |`rootFontSizePx`|`number`|The root font size to use when converting `rem` values to `px`.|
 
+## Methods
+| method | type | description |
+|----------|------|-------------|
+|`getMap`|`(steps: number) => ModularRemScaleMap`|Generate an object of `steps` entries, mapping step numbers (starting at 1) to `rem` values on the scale.|
+|`getStepPx`|`(step: number) => string`|Get the `px` value of a step on the scale.|
+
+## Example
 ```javascript
 import ModularRemScale from '@danscan/modular-scale';
 
